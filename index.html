@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    <!-- Section that wraps around game -->
+    <section class="game">
+
+        <!-- Score board (player and computer) -->
+        <div class = "score">
+            <div class = "player-score">
+                <h2>Player</h2>
+                <p>0</p>
+            </div>
+            <div class = "computer-score">
+                <h2>Computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <!-- Two pages: to start the game and actual game -->
+        <!-- Intro that will fade out -->
+        <div class="intro">
+            <h1>Rock Paper Scissors</h1>
+            <button>Let's Play</button>
+        </div>
+
+        <!-- actual game -->
+        <!-- Match with title (takes title "Choose an option" that will update when someone wins to display the winner) + div with class of hands for player and computer: -->
+        <div class="match fadeOut">
+            <h2 class="winner">Choose an option</h2>
+            <div class="hands">
+                <img class="player-hand" src="./assets/rock.png" alt="Image of a hand formed into a fist to represent rock. It's pointed to the right, facing the other hand. When player chooses scissors it will form the hand into a pair of scissors with two fingers. When player chooses paper it will open the hand completely."> <!-- we set the default image to rock -->
+                <img class="computer-hand" src="./assets/rock.png" alt="Image of a hand formed into a fist to represent rock. It's pointed to the left, facing the other hand. When computer chooses scissors it will form the hand into a pair of scissors with two fingers. When computer chooses paper it will open the hand completely.">
+            </div>
+        <!-- class with option buttons (this is where lowercase is important because used later): -->
+            <div class="options">
+                <button class="rock active">rock</button>
+                <button class="paper active">paper</button>
+                <button class="scissors active">scissors</button>
+            </div>
+        </div>
+
+        <div class="outro fadeOut">
+            <h1 class="result">Winner</h1>
+            <button>Play Again</button>
+        </div>
+
+
+    </section> 
+    <script src="app.js"></script>
+</body>
+</html>
