@@ -78,6 +78,7 @@ const game = () => {
             });
         });                           
     };
+    
 
     //Function to update the score - we call this score every time we make a choice (in compareHands) and increment it (except when it's a tie)
     const updateScore = () => {
