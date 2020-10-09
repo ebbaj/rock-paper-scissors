@@ -20,7 +20,8 @@ section {
 }
 
 .score h2 {
-    color: #00275B;
+    /*color: #00275B;*/
+    color: #F45B69;
     font-size: 30px;
 }
 
@@ -33,7 +34,8 @@ section {
 
 /* intro page that's going to fade out and then fade game in */
 .intro {
-    color: #00275B;
+    /*color: #00275B;*/
+    color: #F45B69;
     height: 50vh;
     display: flex;
     flex-direction: column; 
@@ -43,7 +45,8 @@ section {
 }
 
 .outro {
-    color: #00275B;
+    /*color: #00275B;*/
+    color: #F45B69;
     display: flex;
     position: relative;
     top: -410px;
@@ -70,7 +73,7 @@ section {
     border: none;
     color: #ffffff;
     font-size: 20px;
-    background-color: #00275B; 
+    background-color:#F45B69; /*#00275B;*/
     border-radius: 3px;
     cursor: pointer;
     outline: none;
@@ -79,7 +82,7 @@ section {
 .intro button:hover,
 .match button:hover,
 .outro button:hover {
-    background-color: #144f9d;
+    background-color: #F67984; /*#144f9d;*/
 } 
 
 /* style for actual match */
@@ -93,7 +96,8 @@ section {
 
 /* "choose an option" that will update and display the winner when someone wins */
 .winner {
-    color: #00275B;
+    /*color: #00275B;*/
+    color: #F45B69;
     text-align: center;
     font-size: 50px;
 }
